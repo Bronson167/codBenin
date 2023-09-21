@@ -1,0 +1,91 @@
+/* Style CSS pour la page "Connecter" */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  header {
+    /* Styles pour l'en-tête de la page (si nécessaire) */
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 150px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  button[type="submit"] {
+    background-color: #f0ad4e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background: rgb(125, 104, 37);
+  }
+  
+  /* ... */
+#loginFormContainer {
+    display: none; /* Par défaut, le formulaire de connexion est masqué */
+  }
+  
+  #loginFormContainer.show {
+    display: block; /* Lorsque la classe "show" est ajoutée, le formulaire de connexion est affiché */
+    margin-top: 20px; /* Ajoutez un espace entre le formulaire et le contenu de la page d'accueil */
+  }
+  /* ... */
+  
+  @media screen and (min-width:576px) {
+    #loginFormContainer.show {
+        display: block; /* Lorsque la classe "show" est ajoutée, le formulaire de connexion est affiché */
+        margin-top: 0px; /* Ajoutez un espace entre le formulaire et le contenu de la page d'accueil */
+      }
+}
+
+@media screen and (max-width:576px) {
+{
+    #loginFormContainer.show {
+        display: block; /* Lorsque la classe "show" est ajoutée, le formulaire de connexion est affiché */
+        margin-top: 0px; /* Ajoutez un espace entre le formulaire et le contenu de la page d'accueil */
+      }
+}

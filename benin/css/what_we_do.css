@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Roboto&display=swap');
+/*font-family: 'Redressed', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Redressed&family=Roboto&display=swap');
+/*font-family: 'Merriweather', serif;*/
+
+body {
+    box-sizing: border-box;
+}
+
+
+.img-container {
+  width: 100%; /* Assure que le div occupe toute la largeur disponible */
+  height: 0; /* Initialise la hauteur à 0 pour utiliser le padding-bottom en pourcentage */
+  padding-bottom: 50%; /* 480 / 800 * 100 = 60% pour maintenir le ratio hauteur/largeur */
+  background-image: url('./benin/img/activities.jpg');
+  background-size: cover; /* Redimensionne l'image pour couvrir toute la surface du div */
+  background-position: center; /* Centre l'image dans le div */
+  margin-top : 50px;
+  margin-bottom: 0px;
+}
+
+.hr {
+  margin : 100px;
+}
+
+  /* Define specific sizes for different screen widths (adjust as needed) */
+
+  @media (max-width: 800px) { /* Extra small devices (phones) */
+    .img-container {
+      max-width: 10%;
+      margin-top : 50px;
+      margin-bottom: 250px;
+      .hr {
+        margin : 60px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) { /* Extra small devices (phones) */
+    .img-container {
+      max-width: 140%;
+      margin-bottom: 140px;
+    }
+  }
+
+
+
+  @media (min-width: 577px) and (max-width: 768px) { /* Small devices (tablets) */
+    .img-container {
+      max-width: 35%;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) { /* Medium devices (laptops) */
+    .img-container {
+      max-width: 40%;
+    }
+  }
+
+  @media (min-width: 993px) { /* Large devices (desktops) */
+    .img-container {
+      max-width: 80%;
+    }
+
+  }
+
+ 
