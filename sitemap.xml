@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://codbenin.netlify.app/</loc>
+  </url>
+  <url>
+    <loc>https://codbenin.netlify.app/html/about</loc>
+  </url>
+  <url>
+    <loc>https://codbenin.netlify.app/html/what_we_do</loc>
+  </url>
+  <url>
+    <loc>https://codbenin.netlify.app/html/donate</loc>
+  </url>
+  <!-- Ajoutez des entrées pour chaque page de votre site -->
+</urlset>
