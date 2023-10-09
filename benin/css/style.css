@@ -111,15 +111,19 @@ a.disabled {
 }
 
 .ec-menu {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/plant.jpg') center center fixed no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/benin.jpeg') center center fixed no-repeat;
 }
 .banner, 
 .order-form {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/plant.jpg') center center fixed no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/benin.jpeg') center center fixed no-repeat;
     background-size: cover;
     height: 100vh;
+
 }
 
+.element {
+    margin-left: 300px;
+}
 .order-form {
     height: 500px;
 }
@@ -260,6 +264,10 @@ footer p {
         padding-top: 50px;
         height: auto;
     }
+
+    .element {
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -289,7 +297,12 @@ footer p {
     .bb-navbar .title {
         font-size: 30px;
     }
+
+    .element {
+        margin-left: 0px;
+    }
   }
+
 
   @media screen and (min-width:576px) {
     h1.text-capitalize {
@@ -297,6 +310,10 @@ footer p {
     }
     .med {
       display: none;
+    }
+
+    .element {
+        margin-left: 300px;
     }
   }
 
