@@ -6,6 +6,31 @@
 
 /* Page d'acceuil*/
 
+
+#loginFormContainer {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    right: 0; /* Aligner le formulaire à droite */
+    top: 200px; /* Aligner le formulaire en haut */
+    z-index: 1; /* Assurer que le formulaire est au-dessus du carrousel */
+    max-height: 80vh; /* Hauteur maximale du formulaire (80% de la hauteur de la vue) */
+    overflow-y: auto; /* Ajouter une barre de défilement si nécessaire */
+  }
+  
+  #loginFormContainer.show-form {
+    transform: translateX(0);
+  }
+  
+#loginFormContainer {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #loginFormContainer.show-form {
+    transform: translateX(0);
+  }
+
 a.disabled {
     pointer-events: none; /* Désactive les interactions avec le lien */
     color: gray; /* Changer la couleur du texte pour indiquer le lien désactivé */

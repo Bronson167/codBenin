@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="author" content="Bronson BRUNO">
   <meta name="google-site-verification" content="jhrVdmfXeE8Q1O1euo8_y9Y9VQDAw3DeRdpg67NoHBU" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="description" content="COD-BÉNIN est une organisation à but non lucratif qui milite pour la conscientisation, l'unification et la valorisation de la jeunesse pour un développement plus inclusif et durable. Cette idée a germé au sein d'un groupe d'hommes et de femmes de divers horizons, soucieux du développement du Genre Humain. Cette organisation répond à l'appellation: Création Orientation et Développement - Bénin en abrégé COD-BENIN."/>
@@ -37,7 +38,7 @@
             <a class="nav-link" href="./html/what_we_do.html">Ce que nous faisons</a>
           </li>
           <li class="nav-item pe-4">
-            <a class="nav-link disabled" href="./html/donate.html" title="Indisponible" >Donner</a>
+            <a class="nav-link" href="./html/donate.html" target="_blank">Donner</a>
           </li>
         </ul>
       </div>
@@ -55,19 +56,22 @@
             Création Orientation Développement – Bénin
           </p>
           <div class="d-flex justify-content-center py-5 align-items-center">
-            <a class="btn btn-order rounded-0" id="connectBtn" href="#">Connecter</a>
+          <div class="d-flex justify-content-center py-5 align-items-center">
+            <!-- Bouton "Connecter" avec gestionnaire d'événements onclick -->
+            <a class="btn btn-order rounded-0" id="connectBtn" href="#" onclick="toggleLoginForm()">Connecter</a>
           </div>
         </div>
         <div class="col-md-6" id="loginFormContainer">
-          <form class="login-form"  method="POST" netlify="true">
-            <h2 class = "form-h2 center py-3">Connectez-vous</h2>
+          <!-- Formulaire avec des modifications apportées pour les id des champs -->
+          <form class="login-form" method="POST" action="http://localhost:3000/process-form" netlify="true">
+            <h2 class="form-h2 center py-3">Connectez-vous</h2>
             <div class="form-group">
               <label for="username">Nom d'utilisateur</label>
-              <input type="text" id="username" name="username" required>
+              <input type="text" id="login-username" name="username" required>
             </div>
             <div class="form-group">
               <label for="password">E-mail</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="login-email" name="email" required>
             </div>
             <button type="submit">Se connecter</button>
           </form>
@@ -135,7 +139,16 @@
 
   <script src="benin/js/bootstrap.bundle.min.js"></script>
   <script src="benin/js/app.js"></script>
+
+  <script src="benin/js/bootstrap.bundle.min.js"></script>
+  <script src="benin/js/app.js"></script>
   <script>
+    function toggleLoginForm() {
+      var loginFormContainer = document.getElementById('loginFormContainer');
+      loginFormContainer.classList.toggle('show-form');
+    }
+  </script>
+  <!--  <script>
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new bootstrap.Tooltip(tooltipTriggerEl);
@@ -157,6 +170,7 @@
       // You can add further logic here to handle the form submission, such as sending data to the server
     });
   });
-  </script>
+  </script> -->
+
 </body>
 </html>
